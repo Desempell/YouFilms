@@ -21,6 +21,7 @@ namespace YouFilms.DataLayer
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new FilmConfiguration());
         }
     }
 }
