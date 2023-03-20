@@ -23,6 +23,11 @@ namespace YouFilms.Models
         public List<string> Genres { get; set; }
 
         /// <summary>
+        /// Постер
+        /// </summary>
+        public string Poster { get; set; }
+
+        /// <summary>
         /// Год выпуска
         /// </summary>
         public int YearOfRelease { get; set; }
