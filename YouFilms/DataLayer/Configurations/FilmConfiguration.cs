@@ -30,6 +30,7 @@ namespace YouFilms.DataLayer.Configurations
 
             builder.HasMany(u => u.Reviews)
                 .WithOne(u => u.Film)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
