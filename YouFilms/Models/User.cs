@@ -45,5 +45,10 @@
         /// Любимые фильмы
         /// </summary>
         public List<Film> FavorFilms { get; set; }
+
+        /// <summary>
+        /// Оставленные отзывы
+        /// </summary>
+        public List<Review> Reviews { get; set; }
     }
 }

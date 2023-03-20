@@ -22,6 +22,7 @@ namespace YouFilms.DataLayer
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new FilmConfiguration());
+            modelBuilder.ApplyConfiguration(new ReviewConfiguration());
         }
     }
 }
