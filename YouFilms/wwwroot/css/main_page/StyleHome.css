@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: 'Play', 'Geo', 'Inter', 'OpenSans';
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    background-color: #121212;
+
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    margin: 0;
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.header_wrap {
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_navigation {
+    background-color: #181818;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header_mains_container {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.logos{
+    padding-right: 33px;
+    max-height: 70px;
+}
+
+.navigations{
+    width: 100%;
+    height: 100%;
+}
+
+.nav_header{
+    display: flex; 
+    align-items: center;
+}
+
+.a_header{
+    margin-left:33px;
+    margin-right:33px;
+    color: #D9D9D9;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2px;
+    width: 135px;
+    height: 35px;
+}
+
+.a_header:hover{
+    color: #fff;
+}
+
+.user {
+    padding-right: 3em;
+    font: 'Geo';
+    position: static;
+}
+
+.login {
+    margin-left:65px;
+    margin-right:65px;
+    color: #E2E2E2;
+    opacity: 0.5;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login:hover {
+    color: #E2E2E2;
+    opacity: 1;
+}
+
+
+
+
+/*MAIN*/
+
+/*Carousel*/
+
+.main_wrap {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    width: 1600px;
+    height: 440px;
+    background: rgba(35, 35, 35, 0.3);
+}
+
+.scrollbar {
+    display: flex;
+    min-width: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Main*/
+
+.notation {
+    width: 100%;
+    height: 108px;
+    display: grid;
+}
+
+.mid_note {
+        display: flex;
+        justify-self: center;
+    position: absolute;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    color: #FFFFFF;
+    padding-top: 28px;
+    padding-bottom: 34px;
+}
+
+.main_content {
+    display: flex;
+    justify-content: center;
+}
+
+.content_wrap {
+    width: 1676px;
+    height: 2569px;
+    background: rgba(35, 35, 35, 0.3);
+    border-radius: 30px;
+}
+
+.items_container {
+    display: flex;
+    position: absolute;
+    min-width: 0;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.film_1 {
+    margin-right: 26px;
+    width: 810px;
+    height: 400px;
+    background: #121212;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+/*Импорт шрифтов*/
+@font-face {
+	font-family:  'Play';
+	src: url('assets/fonts/Play-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family:  'Geo';
+	src: url('assets/fonts/Geo-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family:  'Inter';
+	src: url('assets/fonts/Inter-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family:  'OpenSans';
+	src: url('assets/fonts/OpenSans-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
