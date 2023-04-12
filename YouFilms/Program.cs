@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using YouFilms.DataLayer;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<GlobalDbContext>(options =>
+                    options.UseNpgsql(builder.Configuration.GetConnectionString("GlobalDbContext")));
 
 var app = builder.Build();
 
