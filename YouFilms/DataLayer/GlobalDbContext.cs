@@ -6,9 +6,16 @@ namespace YouFilms.DataLayer
 {
     public class GlobalDbContext : DbContext
     {
-        public GlobalDbContext (DbContextOptions<GlobalDbContext> options)
+        public GlobalDbContext()
         {
-            Database.EnsureCreated();
+            var t = this.Database;
+        }
+
+        public GlobalDbContext (DbContextOptions<GlobalDbContext> options)
+            : base(options)
+        {
+            var r = this.ContextId;
+            this.Database.EnsureCreated();
         }
 
         public DbSet<User> Users { get; set; }

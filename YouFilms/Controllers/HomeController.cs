@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using YouFilms.DataLayer;
 using YouFilms.Models;
 
 namespace YouFilms.Controllers
@@ -8,13 +9,17 @@ namespace YouFilms.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly GlobalDbContext _globalDB;
+
+        public HomeController(ILogger<HomeController> logger, GlobalDbContext globalDb)
         {
             _logger = logger;
+            _globalDB = globalDb;
         }
 
         public IActionResult Index()
         {
+            var r = _globalDB.ContextId;
             return View();
         }
 
