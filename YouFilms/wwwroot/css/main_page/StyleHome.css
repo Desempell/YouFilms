@@ -202,25 +202,25 @@ img {
 /*Импорт шрифтов*/
 @font-face {
 	font-family:  'Play';
-	src: url('assets/fonts/Play-Regular.ttf');
+	src: url('../../assets/fonts/Play-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family:  'Geo';
-	src: url('assets/fonts/Geo-Regular.ttf');
+	src: url('../../assets/fonts/Geo-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family:  'Inter';
-	src: url('assets/fonts/Inter-Medium.ttf');
+	src: url('../../assets/fonts/Inter-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family:  'OpenSans';
-	src: url('assets/fonts/OpenSans-Medium.ttf');
+	src: url('../../assets/fonts/OpenSans-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
