@@ -215,6 +215,7 @@ img {
     width: 259px;
     height: 345px;
     border-radius: 20px;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .film_name_box {
@@ -229,8 +230,13 @@ img {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 30px;
     color: #FFFFFF;
+    padding-bottom: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 450px;
 }
 
 .film_name_eng {
@@ -257,14 +263,14 @@ img {
 
 .film_description_title {
     margin: 0;
+    font-family: 'OpenSans';
 }
 
 .film_description {
     margin: 0;
     margin-right: 40px;
     height: 80px;
-    
-    
+    font-family: 'OpenSans';
 }
 
 .film_rating_box {
@@ -280,7 +286,6 @@ img {
     font-weight: 400;
     font-size: 36px;
     line-height: 44px;
-    color: #FFD362;
     margin: 0;
     border-right: solid;
     border-color: rgba(216, 216, 216, 0.5);
@@ -297,6 +302,23 @@ img {
     padding-left: 10px;
     margin: 0;
 }
+
+.film_rating_excelent {
+    color: #FFD362;
+}
+
+.film_rating_good {
+    color: #54BA25;
+}
+
+.film_rating_neutral {
+    color: #B0AFAD;
+}
+
+.film_rating_bad {
+    color: #DE5845;
+}
+
 /*Импорт шрифтов*/
 
 
