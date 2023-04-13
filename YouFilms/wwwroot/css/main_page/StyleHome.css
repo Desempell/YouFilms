@@ -82,8 +82,12 @@ img {
     height: 35px;
 }
 
-.a_header:hover{
-    color: #fff;
+.a_header:hover {
+    color: #f8efc9;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+       
+    border-radius: 30px;
 }
 
 .user {
@@ -190,106 +194,115 @@ img {
     filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.7));
 }
 
-.film_1 {
+/* Объект фильма */
+
+.film_item {
     width: 810px;
     height: 400px;
     background: #121212;
     border-radius: 30px;
-    margin: 7.5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    display: flex;
 }
 
-.film_2 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_image {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    width: 259px;
+    height: 345px;
+    border-radius: 20px;
 }
 
-.film_3 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_name_box {
+
+    margin-top: 36px;
+    margin-left: 40px;
+    font-family: 'Play';
+    padding-bottom: 2px;
 }
 
-.film_4 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
 }
 
-.film_5 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_name_eng {
+    font-style: normal;
+    font-weight: 400;
+    margin:0;
+    font-size: 20px;
+    line-height: 23px;
+    color: #D8D8D8;
 }
 
-.film_6 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_description_box {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 71px;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 
-.film_7 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_description_title {
+    margin: 0;
 }
 
-.film_8 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_description {
+    margin: 0;
+    margin-right: 40px;
+    height: 80px;
+    
+    
 }
 
-.film_9 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_rating_box {
+    display: flex;
+    margin-top:27px;
+    margin-left: 150px;
+    align-items: end;
 }
 
-.film_10 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_rating {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFD362;
+    margin: 0;
+    border-right: solid;
+    border-color: rgba(216, 216, 216, 0.5);
+    padding-right: 7px;
 }
 
-.film_11 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
+.film_rating_vote {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    margin: 0;
 }
-
-.film_12 {
-    width: 810px;
-    height: 400px;
-    background: #121212;
-    border-radius: 30px;
-    margin: 7.5px;
-}
-
 /*Импорт шрифтов*/
+
+
 @font-face {
-	font-family:  'Play';
-	src: url('../../assets/fonts/Play-Regular.ttf');
+    font-family: 'Play';
+    src: url('../../assets/fonts/Play-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
