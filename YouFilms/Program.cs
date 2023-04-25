@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddSwaggerGen();
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<GlobalDbContext>(options =>
                     options.UseNpgsql(builder.Configuration.GetConnectionString("GlobalDbContext")));
@@ -19,6 +20,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
