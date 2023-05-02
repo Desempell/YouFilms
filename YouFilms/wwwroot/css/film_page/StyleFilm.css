@@ -1,0 +1,726 @@
+body {
+    margin: 0;
+    font-family: 'Play',  'Geo', 'Inter', 'OpenSans', 'PlayBold';
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    background-color: #0E0E0E;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    margin: 0;
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.header_wrap {
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    max-height: 70px;
+}
+
+.header_navigation {
+    background-color: #0C0C0C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header_mains_container {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.header_logos{
+    padding-right: 33px;
+    max-height: 70px;
+}
+
+.navigations{
+    width: 100%;
+    height: 100%;
+}
+
+.nav_header{
+    display: flex; 
+    align-items: center;
+}
+
+.a_header{
+    margin-left:33px;
+    margin-right:33px;
+    color: #D9D9D9;
+    text-align: center;
+    line-height: 33px;
+    text-decoration: none;
+    margin-top: 2px;
+    width: 135px;
+    height: 35px;
+}
+
+.a_header:hover {
+    color: #f8efc9;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}
+
+.user {
+    padding-right: 3em;
+    font: 'Geo';
+    position: static;
+}
+
+.login {
+    margin-left:65px;
+    margin-right:65px;
+    color: #E2E2E2;
+    opacity: 0.5;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login:hover {
+    color: #E2E2E2;
+    opacity: 1;
+}
+
+
+/*Main*/
+
+.main_wrap {
+    width: 100%;
+    padding-bottom: 100px;
+    background: #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+}
+
+.upper_wrap {
+    width: 1233px;
+    height: 810px;
+    margin-top: 100px;
+}
+
+.upper_container {
+    display: flex;
+    margin-right: 87px;
+}
+
+
+/*Левое Постер+Избранные*/
+
+.poster_column {
+    width: 300px;
+    height: 540px;
+    margin-right: 90px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poster {
+    width: 300px;
+    height: 450px;
+}
+
+.button_under_poster{
+    margin-top: 40px;
+    width: 250px;
+    height: 50px;
+}
+
+.favorites_button_long {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: none;
+    font-family: 'PlayBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.favorites_button_long:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*Середина описание*/
+
+.description_column {
+    width: 500px;
+    height: 540px;
+    display: block;
+}
+
+.film_name_container {
+    display: block;
+}
+
+.film_name {
+
+    height: 46px;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 0.07em;
+    color:#ffffff;
+    margin-right: 20px;
+}
+
+.first_line {
+    display: flex;
+}
+
+.favorites_wrap {
+    width: 45px;
+    height: 45px;
+}
+
+.favorites_button {
+    background: none;
+    border-radius: 0px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.like_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating_column {
+    width: 130px;
+    height: 540px;
+    margin-left: 215px;
+    display: flex;
+    justify-content: center;
+}
+
+.like {
+    opacity: 0.6;
+}
+
+.like:hover {
+    opacity: 1;
+}
+
+.eng_name {
+    margin-top: 5px;
+    font-family: 'Play';
+    font-style: bold;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.description_container{
+    margin-top: 40px;
+}
+
+.description {
+    color: #ffffff;
+    margin-bottom: 28px;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.info_container {
+    display: block;
+}
+
+.info {
+    color: #ffffff;
+    margin: 27px 0;
+    color: #FFFFFF;
+    display: flex;
+    align-items: baseline;
+}
+
+.option {
+    width: 180px;
+    height: 26px;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-right: 45px;
+}
+
+.value {
+    width: 275px;
+    height: 26px;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 0em;
+}
+
+
+/*Правый рейтинг*/
+
+.rating_column {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.rating_container {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFD362;
+}
+
+.rating_excelent {
+    color: #FFD362;
+}
+
+.rating_good {
+    color: #54BA25;
+}
+
+.rating_neutral {
+    color: #B0AFAD;
+}
+
+.rating_bad {
+    color: #DE5845;
+}
+
+.rating_container {
+    font-family: 'InterReg';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 13px;
+}
+
+.rating {
+    text-align: center;
+}
+
+.rating_amounts {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.review_button_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.review_button {
+    width: 130px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    border: none;
+    font-family: 'PlayBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.review_button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.review_button_inside {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+
+.lower_review_button_wrap {
+    margin-top: 198px;
+    display:flex;
+    justify-content: center
+}
+
+.lower_review_button {
+    width: 1120px;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    border: none;
+    font-family: 'PlayBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+
+.lower_review_button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.review_button_text {
+    font-family: 'PlayBold';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    margin-left: 2px;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    color: #ffffff
+}
+
+.lower_review_button_text{
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    width: 490px;
+    height: 42px;
+}
+
+/*Отызвы снизу*/
+
+.review_section_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.review_section {
+    width: 1449px;
+    background-color: #232323;
+    align-items: center;
+    padding-bottom: 80px;
+    border-radius: 30px;
+}
+
+.review_block {
+    width: 1120px;
+    min-height: 150px;
+    background-color: #D8D8D8;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 25px;
+    display: flex;
+}
+
+.user_icon{
+    margin-top: 8px;
+    width: 80px;
+    height: 80px;
+}
+
+.avatar_icon{
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.review_text_container{
+    display: block;
+    width: 810px;
+    margin-left: 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 0em;
+    margin-top: 13px;
+}
+
+.caption{
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 0em;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.07em;
+    color: #000000;
+}
+
+.user_name{
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    color: #000000;
+    opacity: 0.7;
+    margin-left: 11px;
+}
+
+.review_text{
+    width: 800px;
+    height: auto;
+    display: flex;
+    white-space: pre-line;
+    word-break: keep-all;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.07em;
+    color: #000000;
+}
+
+.evaluation{
+    border-radius: 30.2077px;
+    width: 90px;
+    height: 90px;
+    margin: 18px 0 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.evaluation_exelent{
+    background: linear-gradient(134.6deg, #FFC46B 31.26%, #FFE55E 101.9%);
+}
+
+.evaluation_good {
+    background: linear-gradient(134.6deg, #7ECC6A 31.26%, #C2FF5E 101.9%);
+}
+
+.evaluation_neutral {
+    background: linear-gradient(134.6deg, #949494 31.26%, #E7E7E7 101.9%);
+}
+
+.evaluation_bad {
+    background: linear-gradient(134.6deg, #F26060 31.26%, #EEB47F 101.9%);
+}
+
+.eval{
+    padding: 6px 6px 0 0;
+    width: 70px;
+    height: 70px;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: -0.085em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+    background-color:#121212;
+    padding: 40px 186px 40px 70px;
+    border-top: 4px solid rgba(176, 175, 173, 0.5);
+    margin-top: 90px;
+    justify-content: space-between;
+    display:flex;
+}
+
+.footer_elements_wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.logo_group{
+    display: flex;
+    align-items: center;
+}
+
+.footer_icon {
+    margin-right: 5px;
+    font-size: 0;
+}
+
+.footer_logo {
+    position: relative;
+    top: 5px;
+    font-size: 0;
+}
+
+.footer_nav_wrap {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    margin-left: 33px;
+}
+
+.a_footer {
+    font-size: 16px;
+    margin: 0 30px 0 30px;
+    color: #B0AFAD;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 0.145em;
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    margin-top: 2px;
+}
+
+.a_footer:hover {
+    color: #f8efc9;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.a_footer_end {
+    width: 140px;
+}
+
+.footer_year{
+    display: flex;
+    align-items: center;
+}
+
+.year_note {
+    width: 90px;
+    height: 42.08px;
+    font-family: 'Geo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.145em;
+    color: #D9D9D9;
+}
+
+/*Импорт шрифтов*/
+
+
+@font-face {
+    font-family: 'Play';
+    src: url('../../assets/fonts/Play-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PlayBold';
+    src: url('../../assets/fonts/Play-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family:  'Geo';
+	src: url('../../assets/fonts/Geo-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family:  'Inter';
+	src: url('../../assets/fonts/Inter-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family:  'InterReg';
+	src: url('../../assets/fonts/Inter-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family:  'OpenSans';
+	src: url('../../assets/fonts/OpenSans-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
