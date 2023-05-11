@@ -1,0 +1,128 @@
+﻿@model IEnumerable<Film>
+
+
+@{
+  var filmsList = Model;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>YouFilms</title>
+	<link rel="stylesheet" type="text/css" href="../../css/main_page/StyleHome.css" />
+</head>
+<body>
+	<div class="header_wrap">
+		<header class="header_navigation">
+			<div class="header_mains_container">
+
+
+				<div class="header_logos">
+					<a href="HomePage.html">
+						<img src="../../assets/images/icon_head.svg"/>
+					</a>
+
+				</div>
+
+				<div class="header_main_navigations">
+					<div class="nav_group">
+						<nav class="nav_header">
+							<a class="a_header" href="HomePage.html">Главная</a>
+							<a class="a_header" href="HomePage.html">Фильмы</a>
+							<a class="a_header" href="HomePage.html">Сериалы</a>
+						</nav>
+					</div>
+
+				</div>
+
+
+			</div>
+			<div class="user">
+				<a class="login">Войти</a>
+			</div>
+		</header>
+	</div>
+
+	<div class="main_wrap">
+		<div class="carousel_wrap">
+			<div class="carousel">
+				<div class="scrollbar">
+
+					<div class="item_film">
+						<a>a</a>
+					</div>
+					<div>
+						<a>b</a>
+					</div>
+					<div>
+						<a>c</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="notation">
+			<a class="mid_note">Топ фильмов:</a>
+		</div>
+
+		<main class="main_content">
+			<div class="content_wrap">
+				<div class="items_container">
+					@{
+						foreach (var film in filmsList)
+						{
+							<div class="film_item">
+								<div>
+									<img class="film_image" src="../../assets/images/film1.png" />
+								</div>
+								<div class="film_name_box">
+									<h2 class="film_name">@film.Name</h2>
+									<p class="film_name_eng">@film.Name, <span class="film_year">@film.YearOfRelease</span></p>
+									<div class="film_description_box">
+										<p class="film_description_title">Описание</p>
+										<p class="film_description">@film.Description</p>
+									</div>
+									<div class="film_rating_box">
+										<p class="film_rating film_rating_excelent">@film.AverageRating</p>
+										<p class="film_rating_vote">(190)</p>
+									</div>
+								</div>
+							</div>
+						}
+					}				
+				</div>
+			</div>
+		</main>
+
+	</div>
+	<footer class="footer">
+		<div class="footer_elements_wrap">
+			<div class="logo_group">
+				<a class="logo_group" href="HomePage.html">
+					<div class="footer_icon">
+						<img src="../../assets/images/icon_footer.svg" />
+					</div>
+					<div class="footer_logo">
+						<img src="../../assets/images/logo_footer.svg" />
+					</div>
+				</a>
+			</div>
+			<div class="footer_nav">
+				<nav class="footer_nav_wrap">
+					<a class="a_footer" href="HomePage.html">О сайте</a>
+					<a class="a_footer" href="HomePage.html">Помощь</a>
+					<a class="a_footer a_footer_end" href="HomePage.html">Контакты</a>
+				</nav>
+			</div>
+
+		</div>
+		<div class="footer_year">
+			<a class="year_note">2023</a>
+		</div>
+	</footer>
+
+</body>
+</html>
