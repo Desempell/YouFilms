@@ -15,7 +15,7 @@ namespace YouFilms.DataLayer
             : base(options)
         {
             var r = this.ContextId;
-            this.Database.EnsureCreated();
+            //this.Database.EnsureCreated();
         }
 
         public DbSet<User> Users { get; set; }
