@@ -2,6 +2,10 @@
 using YouFilms.Controllers.DTO;
 using YouFilms.DataLayer;
 using YouFilms.Models;
+using System.Security.Cryptography;
+using NuGet.Common;
+using System.Text;
+using YouFilms.Controllers.Helpers;
 
 namespace YouFilms.Controllers
 {
@@ -23,10 +27,11 @@ namespace YouFilms.Controllers
 		[ProducesResponseType(StatusCodes.Status400BadRequest)]
 		public ActionResult<User> Create([FromBody] UserDTO userDTO)
 		{
+			using var md5 = MD5.Create();
 			var user = new User()
 			{
 				Login = userDTO.Login,
-				Password = userDTO.Password,
+				Password = HashService.GetMd5Hash(md5, userDTO.Password),
 				Avatar = userDTO.Avatar,
 				PhoneNumber = userDTO.PhoneNumber,
 				FavorGenre = userDTO.FavorGenre,
