@@ -414,11 +414,8 @@ img {
 }
 
 .lower_review_button {
-    width: 1120px;
-    height: 62px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    border: none;
+    width: 830px;
+    height: 70px;
     font-family: 'PlayBold';
     font-style: normal;
     font-weight: 400;
@@ -427,12 +424,31 @@ img {
     text-align: center;
     letter-spacing: 0.07em;
     color: #FFFFFF;
+    border: none;
+   margin: auto;
+   --boxW: 830px;
+   --boxH: 70px;
+   --borderW: 23%;
+   --borderH: 21%;
+   --borderSize: 4px;
+
+   width: var(--boxW);
+   height: var(--boxH);
+   margin: auto;
+   background-color: rgba(0, 0, 0, 0.1);
+   background-image: linear-gradient(rgba(249, 191, 59, 1) var(--borderH), transparent var(--borderH), transparent calc(var(--boxH) - var(--borderH)), rgba(249, 191, 59, 1) calc(var(--boxH) - var(--borderH))),
+                     linear-gradient(90deg, rgba(249, 191, 59, 1) var(--borderW), transparent var(--borderW), transparent calc(var(--boxW) - var(--borderW)), rgba(249, 191, 59, 1) calc(var(--boxW) - var(--borderW))),
+                     linear-gradient(rgba(249, 191, 59, 1) var(--borderH), transparent var(--borderH), transparent calc(var(--boxH) - var(--borderH)), rgba(249, 191, 59, 1) calc(var(--boxH) - var(--borderH))),
+                     linear-gradient(90deg, rgba(249, 191, 59, 1) var(--borderW), transparent var(--borderW), transparent calc(var(--boxW) - var(--borderW)), rgba(249, 191, 59, 1) calc(var(--boxW) - var(--borderW)));
+   background-size: var(--borderSize) var(--boxH), var(--boxW) var(--borderSize), var(--borderSize) var(--boxH), var(--boxW) var(--borderSize);
+   background-position: 0 0, 0 0, 100% 100%, 100% 100%;
+   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+   text-decoration: none;
 }
 
 .lower_review_button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #0C0C0C;
 }
-
 
 .review_button_text {
     font-family: 'PlayBold';
@@ -445,7 +461,15 @@ img {
     display: flex;
     justify-content: center;
     opacity: 1;
-    color: #ffffff
+    color: #ffffff;
+}
+
+.review_button_text_low{
+    display: flex;
+    justify-content: center;
+    margin-left: 2px;
+    margin-top: 7px;
+    text-decoration: none;
 }
 
 .lower_review_button_text{
@@ -460,6 +484,232 @@ img {
     width: 490px;
     height: 42px;
 }
+
+/*Модальное окно для написания отзыва*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    cursor: default;
+    z-index: 1000;
+  }
+  
+  .popup:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: default;
+  }
+  
+  .popup__box {
+    margin: 150px auto;
+    width: 1120px;
+    height: 610px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.52);
+    border-radius: 20px;
+    background-color:#151515;
+    color:rgba(255, 255, 255, 0.8);
+    display: flex;
+    position:  relative;
+  }
+
+.any_words_wrap{
+    margin: 20px 22px 30px 22px;
+}
+
+.short_words_wrap{
+    display: flex;
+    width: 1076px;
+    height: 50px;
+    background: #000000;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.short_words{
+    display: flex;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F9F9F9;
+    margin: 9px auto auto 25px;
+}
+
+.short_in{
+    padding-left: 25px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+::-webkit-input-placeholder{
+    color: white;
+}
+
+.short_in{
+    width: 1076px;
+    height: 50px;
+    background: #0B0B0B;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: none;
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F9F9F9;
+}
+
+.long_words_wrap{
+    display: flex;
+    width: 1076px;
+    height: 400px;
+    background: #000000;
+    border-radius: 15px;
+}
+
+.long_in{
+    width: 1076px;
+    height: 400px;
+    background: #0B0B0B;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: none;
+
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F9F9F9;
+}
+
+textarea{
+    padding-left: 25px;
+    text-align: justify;
+    padding-top: 10px;
+    padding-right: 25px;
+    resize: none;
+}
+
+.interactive_buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: baseline;
+} 
+
+.stars_holds{
+    margin-left: 22px;
+    margin-right: 145px;
+}
+
+.starses {
+    margin: auto;
+    width: 550px;
+}
+.starses > * {
+    float: right;
+}
+@keyframes pulse {
+    50% {
+        color: #5e5e5e;
+        text-shadow: 0 0 15px #777;
+   }
+}
+.starses label {
+    height: 20px;
+    width: 10%;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.starses label:nth-of-type(5):after {
+    animation-delay: 0.25s;
+}
+.starses label:nth-of-type(4):after {
+    animation-delay: 0.2s;
+}
+.starses label:nth-of-type(3):after {
+    animation-delay: 0.15s;
+}
+.starses label:nth-of-type(2):after {
+    animation-delay: 0.1s;
+}
+.starses label:nth-of-type(1):after {
+    animation-delay: 0.05s;
+}
+.starses label:after {
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    content: "☆";
+    color: #444;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    font-size: 50px;
+    animation: 1s pulse ease;
+}
+.starses label:hover:after {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #5e5e5e;
+}
+.starses input {
+    display: none;
+}
+.starses input:checked + label:after, .starses input:checked ~ label:after {
+    content: "★";
+    color: #f9bf3b;
+    text-shadow: 0 0 20px #f9bf3b;
+}
+
+
+
+
+.send_button{
+    
+}
+
+.outer{
+    --boxW: 225px;
+   --boxH: 52px;
+}
+
+.text_outer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.045em;
+    color: #F9BF3B;
+}
+
+
+
 
 /*Отызвы снизу*/
 
