@@ -3,7 +3,8 @@
     <head>
 		<meta charset="utf-8">
         <title>Film_name</title>
-        <link rel="stylesheet" type="text/css" href="../../css/film_page/StyleFilm.css"/>
+        <link rel="stylesheet" type="text/css" href="../../css/film_page/StyleFilm.css "/>
+        <link rel="stylesheet" href="../../css/film_page/StyleFilm.scss "/>
 	</head>
 	<body>
         <div class="header_wrap">
@@ -114,13 +115,82 @@
                 </div>
 
                 <div class="lower_review_button_wrap">
-                    <button class="lower_review_button">
-                        <div class="review_button_text">
-                            <img src="../../assets/images/review_pen.svg">
-                            <a class="lower_review_button_text">Напишите свой отзыв...</a>
-                        </div>
-                    </button>
+                        <a class="lower_review_button" href="#popup1">
+                            <div class="review_button_text_low">
+                                <img src="../../assets/images/review_pen.svg">
+                                <div class="lower_review_button_text">Напишите свой отзыв...</div>
+                            </div>
+                        </a>
                 </div>
+
+                <div id="popup1" class="popup">
+                    <a href="#" class="popup__overlay"></a>
+                    <div class="popup__box">
+                      <div class="any_words_wrap">
+                        <div class = "short_words_wrap">
+                            
+                            <input class = "short_in" maxlength='80' type="text" placeholder="- Напишите отзыв в двух словах..." name="uname" required>
+                            
+                        </div>
+                        <div class = "long_words_wrap">
+
+                            <textarea class = "long_in" maxlength='2001' placeholder="- Напишите свой отзыв не в двух словах..."></textarea>
+                            
+                        </div>
+
+                        <div class = "interactive_buttons">
+                            <div class = "stars_holds">
+
+                                <div class="starses">
+
+                                    <input class="st" type="radio" name="starses" id="r1">
+                                    <label for="r1"></label>
+                                   
+                                    <input class="st" type="radio" name="starses" id="r2">
+                                    <label for="r2"></label>
+                                   
+                                    <input class="st" type="radio" name="starses" id="r3">
+                                    <label for="r3"></label>
+                                   
+                                    <input class="st" type="radio" name="starses" id="r4">
+                                    <label for="r4"></label>
+                                   
+                                    <input class="st" type="radio" name="starses" id="r5">
+                                    <label for="r5"></label>
+                                    
+                                   <input class="st" type="radio" name="starses" id="r6">
+                                    <label for="r6"></label>
+                                   
+                                    <input class="st" type="radio" name="starses" id="r7">
+                                    <label for="r7"></label>
+                                   
+                                    <input class="st" type="radio" name="starses" id="r8">
+                                    <label for="r8"></label>
+                                   
+                                    <input class="st" type="radio" name="starses" id="r9">
+                                    <label for="r9"></label>
+                                   
+                                    <input class="st" type="radio" name="starses" id="r10">
+                                    <label for="r10"></label>
+                                    
+                                   </div>
+
+                            </div>
+                            <div class= "send_button">
+                                <div class = "lower_review_button outer">
+                                    <div class="review_button_text_low">
+                                        <div class="lower_review_button_text text_outer">Отправить</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
 
             </div>
             </div>
